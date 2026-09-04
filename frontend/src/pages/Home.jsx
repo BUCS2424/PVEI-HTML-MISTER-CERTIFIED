@@ -36,15 +36,15 @@ const Home = () => {
       />
 
       {/* HERO */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-navy-950">
+      <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-neutral-900">
         <img
-          src="/assets/images/hero-home.jpg"
+          src="/assets/images/Pvei-contracting-services.jpg"
           alt="Pasco County Florida home repair and general contracting services"
           loading="eager"
           fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          className="absolute inset-0 h-full w-full object-cover opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/60 to-neutral-900/20" />
         <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-sky-500/20 blur-3xl frost-blob" />
         <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-sky-400/10 blur-3xl frost-blob-slow" />
 
@@ -98,7 +98,7 @@ const Home = () => {
               src="/assets/images/hero-home.jpg"
               alt="Home repair project in Pasco County Florida"
               loading="lazy"
-              className="rounded-3xl shadow-2xl shadow-navy-900/20 w-full object-cover aspect-[4/5]"
+              className="rounded-3xl shadow-2xl shadow-navy-900/20 w-full object-contain aspect-[1379/1246]"
             />
           </div>
           <div>

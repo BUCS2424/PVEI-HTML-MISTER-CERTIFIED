@@ -85,6 +85,26 @@ let webpackConfig = {
     },
     configure: (webpackConfig) => {
 
+      // Dev-mode-only: give the JS/CSS bundle a unique filename on every
+      // rebuild instead of the fixed "bundle.js"/"main.css". Some preview
+      // hosts front the dev server with a CDN that aggressively caches
+      // static asset URLs for hours — a fixed filename means viewers keep
+      // getting a stale bundle after every edit. A changing filename is a
+      // guaranteed cache-miss, so this is unnecessary (and skipped) for the
+      // production build, which already uses proper contenthash filenames.
+      if (isDevServer) {
+        webpackConfig.output.filename = "static/js/bundle.[fullhash:8].js";
+        if (webpackConfig.output.chunkFilename) {
+          webpackConfig.output.chunkFilename = "static/js/[name].[fullhash:8].chunk.js";
+        }
+        (webpackConfig.plugins || []).forEach((plugin) => {
+          if (plugin?.constructor?.name === "MiniCssExtractPlugin" && plugin.options) {
+            plugin.options.filename = "static/css/main.[fullhash:8].css";
+            plugin.options.chunkFilename = "static/css/[name].[fullhash:8].chunk.css";
+          }
+        });
+      }
+
       // Add ignored patterns to reduce watched directories
         webpackConfig.watchOptions = {
           ...webpackConfig.watchOptions,
