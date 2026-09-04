@@ -129,6 +129,7 @@ export const markets = [
     eyebrow: "Industrial / Infrastructure",
     path: "/industrial-infrastructure-contracting",
     icon: "TrafficCone",
+    heroImage: "/assets/images/pvei-Industrial.webp",
     seoTitle: "Industrial & Infrastructure Contracting — DOT & Municipal Work",
     seoDescription:
       "Polar Vortex partners with DOTs, municipalities, and public agencies on mast arm and bridge painting, traffic striping, MOT, and safety training across Florida.",
