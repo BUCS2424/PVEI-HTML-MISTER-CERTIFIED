@@ -49,7 +49,19 @@ const MarketPage = ({ market }) => {
       <SEO title={market.seoTitle} description={market.seoDescription} path={market.path} jsonLd={jsonLd} />
 
       {/* HERO */}
-      <section className="relative bg-navy-950 pt-36 pb-24 overflow-hidden">
+      <section className={`relative pt-36 pb-24 overflow-hidden ${market.heroImage ? "bg-neutral-900" : "bg-navy-950"}`}>
+        {market.heroImage && (
+          <>
+            <img
+              src={market.heroImage}
+              alt={market.heroTitle}
+              loading="eager"
+              fetchPriority="high"
+              className="absolute inset-0 h-full w-full object-cover opacity-70"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/60 to-neutral-900/20" />
+          </>
+        )}
         <div className="absolute -top-16 -left-16 h-72 w-72 rounded-full bg-sky-500/15 blur-3xl frost-blob" />
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           {HeroIcon && (

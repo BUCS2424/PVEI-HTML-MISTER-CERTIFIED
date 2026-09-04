@@ -42,6 +42,7 @@ export const markets = [
     eyebrow: "Residential",
     path: "/residential-contracting-services",
     icon: "Home",
+    heroImage: "/assets/images/Pvei-contracting-services.jpg",
     seoTitle: "Residential Contracting — Design-Build, Remodeling & Additions",
     seoDescription:
       "Polar Vortex delivers residential design-build, full and partial remodeling, additions, and new construction across Tampa Bay & Pasco County, Florida.",
@@ -80,6 +81,7 @@ export const markets = [
     eyebrow: "Commercial",
     path: "/commercial-contracting-services",
     icon: "Building2",
+    heroImage: "/assets/images/pvei-commercial.webp",
     seoTitle: "Commercial Construction — Framing, Drywall & Finishes",
     seoDescription:
       "Polar Vortex self-performs commercial framing, drywall, insulation, finishes, and safety consulting for build-outs and renovations across Florida.",
