@@ -78,7 +78,7 @@ const JobGallery = () => {
                   src={photo.src}
                   alt={photo.alt}
                   loading="lazy"
-                  className={`w-full object-cover scale-[1.08] ${TILE_ASPECTS[idx % TILE_ASPECTS.length]}`}
+                  className={`w-full object-cover scale-[1.02] ${TILE_ASPECTS[idx % TILE_ASPECTS.length]}`}
                 />
               </button>
             ))}
@@ -135,7 +135,7 @@ const JobGallery = () => {
             <img
               src={jobGallery[openIndex].src}
               alt={jobGallery[openIndex].alt}
-              className="max-h-[88vh] max-w-[92vw] object-contain scale-[1.08]"
+              className="max-h-[88vh] max-w-[92vw] object-contain scale-[1.02]"
             />
           </div>
 
