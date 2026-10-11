@@ -55,7 +55,7 @@ posts to `cpanel-contact-handler.php` instead of the sandbox FastAPI backend.
 |------------|-----------------------------------------------|
 | Home       | `/`                                            |
 | About      | `/general-contractor-services`                 |
-| Services   | `/handyman-services-in-pasco`                  |
+| Services   | `/construction-services` (old `/handyman-services-in-pasco` now redirects here) |
 | Residential| `/residential-contracting-services`            |
 | Commercial | `/commercial-contracting-services`             |
 | Industrial | `/industrial-infrastructure-contracting`       |

@@ -21,7 +21,7 @@ export const business = {
 export const nav = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/general-contractor-services" },
-  { label: "Our Services", path: "/handyman-services-in-pasco" },
+  { label: "Our Services", path: "/construction-services" },
   {
     label: "Markets We Serve",
     children: [

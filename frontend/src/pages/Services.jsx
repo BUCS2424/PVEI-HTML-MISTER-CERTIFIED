@@ -33,7 +33,7 @@ const Services = () => {
     serviceType: "Residential, Commercial & Industrial General Contracting",
     provider: { "@type": "HomeAndConstructionBusiness", name: business.legalName },
     areaServed: business.serviceArea,
-    url: `${SITE_URL}/handyman-services-in-pasco`,
+    url: `${SITE_URL}/construction-services`,
   };
 
   return (
@@ -41,7 +41,7 @@ const Services = () => {
       <SEO
         title="Our Services — Residential, Commercial & Industrial"
         description="Explore Polar Vortex Home Services' full range of services: residential remodeling and repair, commercial build-outs, and industrial & infrastructure work for DOTs and municipalities."
-        path="/handyman-services-in-pasco"
+        path="/construction-services"
         jsonLd={jsonLd}
       />
 
