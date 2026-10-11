@@ -7,7 +7,7 @@ export const business = {
   name: "Polar Vortex",
   legalName: "Polar Vortex Home Services",
   shortName: "Polar Vortex",
-  tagline: "The Trusted Handyman",
+  tagline: "The Trusted Contractor",
   phoneDisplay: "(727) 639-7070",
   phoneHref: "tel:+17276397070",
   salesPhoneLabel: "Sales & Scheduling",

@@ -1,7 +1,7 @@
 {
   "short_name": "Polar Vortex",
   "name": "Polar Vortex Home Services \u2014 PVEI",
-  "description": "Licensed general contractor & handyman services across Pinellas County and the Greater Tampa Bay Area, Florida.",
+  "description": "Licensed general contractor serving residential, commercial, and industrial & infrastructure clients across Pinellas County and the Greater Tampa Bay Area, Florida.",
   "icons": [
     { "src": "/assets/images/favicon-16.png", "sizes": "16x16", "type": "image/png" },
     { "src": "/assets/images/favicon-32.png", "sizes": "32x32", "type": "image/png" },
