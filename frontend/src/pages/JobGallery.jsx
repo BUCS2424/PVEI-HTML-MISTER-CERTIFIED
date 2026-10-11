@@ -78,7 +78,7 @@ const JobGallery = () => {
                   src={photo.src}
                   alt={photo.alt}
                   loading="lazy"
-                  className={`w-full object-cover ${TILE_ASPECTS[idx % TILE_ASPECTS.length]}`}
+                  className={`w-full object-cover scale-[1.08] ${TILE_ASPECTS[idx % TILE_ASPECTS.length]}`}
                 />
               </button>
             ))}
@@ -128,12 +128,16 @@ const JobGallery = () => {
             <ChevronRight className="h-6 w-6" />
           </button>
 
-          <img
-            src={jobGallery[openIndex].src}
-            alt={jobGallery[openIndex].alt}
+          <div
             onClick={(e) => e.stopPropagation()}
-            className="max-h-[88vh] max-w-[92vw] object-contain rounded-xl shadow-2xl"
-          />
+            className="inline-block overflow-hidden rounded-xl shadow-2xl leading-none"
+          >
+            <img
+              src={jobGallery[openIndex].src}
+              alt={jobGallery[openIndex].alt}
+              className="max-h-[88vh] max-w-[92vw] object-contain scale-[1.08]"
+            />
+          </div>
 
           <p className="absolute bottom-5 left-1/2 -translate-x-1/2 text-xs font-semibold text-slate-300">
             {openIndex + 1} / {jobGallery.length}
