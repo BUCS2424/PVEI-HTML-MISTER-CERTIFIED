@@ -143,6 +143,13 @@ const MobileMenu = ({ open, onClose }) => {
             <Phone className="h-4 w-4" /> {business.phoneDisplay}
           </a>
           <a
+            href={business.salesPhoneHref}
+            data-testid="mobile-menu-sales-phone-link"
+            className="flex items-center justify-center gap-1.5 w-full text-xs font-semibold text-slate-500"
+          >
+            {business.salesPhoneLabel}: {business.salesPhoneDisplay}
+          </a>
+          <a
             href={business.emailHref}
             className="flex items-center justify-center gap-2 w-full rounded-full border border-slate-200 text-navy-900 font-semibold py-3"
           >

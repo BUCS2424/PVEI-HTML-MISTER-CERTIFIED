@@ -72,13 +72,18 @@ const MarketPage = ({ market }) => {
           <p className="text-sky-300 font-bold tracking-[0.2em] uppercase text-sm mb-3">{market.eyebrow}</p>
           <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-white">{market.heroTitle}</h1>
           <p className="mt-5 text-slate-300 max-w-2xl mx-auto leading-relaxed">{market.heroLead}</p>
-          <div className="mt-9 flex flex-wrap justify-center gap-4">
-            <a
-              href={business.phoneHref}
-              className="inline-flex items-center gap-2 rounded-full bg-white text-navy-900 font-bold px-7 py-3.5 shadow-xl shadow-black/20 hover:scale-105 transition-transform"
-            >
-              <Phone className="h-4 w-4" /> {business.phoneDisplay}
-            </a>
+          <div className="mt-9 flex flex-wrap justify-center items-start gap-4">
+            <div className="flex flex-col items-center">
+              <a
+                href={business.phoneHref}
+                className="inline-flex items-center gap-2 rounded-full bg-white text-navy-900 font-bold px-7 py-3.5 shadow-xl shadow-black/20 hover:scale-105 transition-transform"
+              >
+                <Phone className="h-4 w-4" /> {business.phoneDisplay}
+              </a>
+              <a href={business.salesPhoneHref} className="mt-1.5 text-xs font-semibold text-slate-300 hover:text-white">
+                {business.salesPhoneLabel}: {business.salesPhoneDisplay}
+              </a>
+            </div>
             <Link
               to="/contact-pvei-home-services"
               className="inline-flex items-center gap-2 rounded-full border border-white/40 text-white font-bold px-7 py-3.5 hover:bg-white/10 transition-colors"
@@ -176,6 +181,12 @@ const MarketPage = ({ market }) => {
               className="mt-8 inline-flex items-center gap-2 text-xl font-display font-extrabold text-sky-300"
             >
               <Phone className="h-5 w-5" /> Call Us Today! {business.phoneDisplay}
+            </a>
+            <a
+              href={business.salesPhoneHref}
+              className="mt-1.5 flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-slate-200"
+            >
+              {business.salesPhoneLabel}: {business.salesPhoneDisplay}
             </a>
           </div>
           <div className="order-1 lg:order-2">

@@ -178,10 +178,15 @@ const About = () => {
             infrastructure work, {business.name} takes care of what needs to be done so every item on your list gets
             checked &mdash; reliably, on schedule, and to spec.
           </p>
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a href={business.phoneHref} className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-sky-500 to-sky-700 text-white font-bold px-7 py-3.5 shadow-lg shadow-sky-900/20 hover:scale-105 transition-transform">
-              <Phone className="h-4 w-4" /> Call {business.phoneDisplay}
-            </a>
+          <div className="mt-10 flex flex-wrap justify-center items-start gap-4">
+            <div className="flex flex-col items-center">
+              <a href={business.phoneHref} className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-sky-500 to-sky-700 text-white font-bold px-7 py-3.5 shadow-lg shadow-sky-900/20 hover:scale-105 transition-transform">
+                <Phone className="h-4 w-4" /> Call {business.phoneDisplay}
+              </a>
+              <a href={business.salesPhoneHref} className="mt-1.5 text-xs font-semibold text-slate-500 hover:text-sky-600">
+                {business.salesPhoneLabel}: {business.salesPhoneDisplay}
+              </a>
+            </div>
             <Link to="/contact-pvei-home-services" className="inline-flex items-center gap-2 rounded-full border border-navy-200 text-navy-900 font-bold px-7 py-3.5 hover:bg-white transition-colors">
               Request a Free Quote <ArrowRight className="h-4 w-4" />
             </Link>

@@ -48,6 +48,9 @@ const Contact = () => {
                     </span>
                     {business.phoneDisplay}
                   </a>
+                  <a href={business.salesPhoneHref} data-testid="contact-page-sales-phone-link" className="mt-1 ml-[52px] block text-xs font-semibold text-slate-400 hover:text-sky-300 transition-colors">
+                    {business.salesPhoneLabel}: {business.salesPhoneDisplay}
+                  </a>
                 </li>
                 <li>
                   <a href={business.emailHref} data-testid="contact-page-email-link" className="flex items-center gap-3 font-semibold hover:text-sky-300 transition-colors">

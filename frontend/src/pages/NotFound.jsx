@@ -21,6 +21,9 @@ const NotFound = () => (
             <Phone className="h-4 w-4" /> {business.phoneDisplay}
           </a>
         </div>
+        <a href={business.salesPhoneHref} className="mt-3 inline-block text-xs font-semibold text-slate-400 hover:text-slate-200">
+          {business.salesPhoneLabel}: {business.salesPhoneDisplay}
+        </a>
       </div>
     </section>
   </>

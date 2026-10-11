@@ -105,18 +105,29 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a
-              href={business.phoneHref}
-              data-testid="header-phone-link"
-              className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold shadow-lg shadow-sky-900/10 transition-transform hover:scale-105 ${
-                transparent
-                  ? "bg-white text-navy-900"
-                  : "bg-gradient-to-r from-sky-500 to-sky-700 text-white"
+            <div
+              className={`flex flex-col items-start rounded-2xl px-5 py-2 shadow-lg shadow-sky-900/10 ${
+                transparent ? "bg-white text-navy-900" : "bg-gradient-to-r from-sky-500 to-sky-700 text-white"
               }`}
             >
-              <Phone className="h-4 w-4" />
-              {business.phoneDisplay}
-            </a>
+              <a
+                href={business.phoneHref}
+                data-testid="header-phone-link"
+                className="inline-flex items-center gap-2 text-sm font-bold hover:scale-105 transition-transform"
+              >
+                <Phone className="h-4 w-4" />
+                {business.phoneDisplay}
+              </a>
+              <a
+                href={business.salesPhoneHref}
+                data-testid="header-sales-phone-link"
+                className={`text-[11px] font-semibold leading-tight hover:underline ${
+                  transparent ? "text-navy-900/70" : "text-white/80"
+                }`}
+              >
+                {business.salesPhoneLabel}: {business.salesPhoneDisplay}
+              </a>
+            </div>
           </div>
 
           <button

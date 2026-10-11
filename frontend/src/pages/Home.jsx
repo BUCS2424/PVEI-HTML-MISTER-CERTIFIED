@@ -60,14 +60,23 @@ const Home = () => {
             the Tampa Bay Area for {business.yearsExperience} years. Give us a call today.
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
-            <a
-              href={business.phoneHref}
-              data-testid="hero-cta-call"
-              className="inline-flex items-center gap-2 rounded-full bg-white text-navy-900 font-bold px-7 py-3.5 shadow-xl shadow-black/20 hover:scale-105 transition-transform"
-            >
-              <Phone className="h-4 w-4" /> {business.phoneDisplay}
-            </a>
+          <div className="mt-9 flex flex-wrap items-start gap-4">
+            <div className="flex flex-col items-center">
+              <a
+                href={business.phoneHref}
+                data-testid="hero-cta-call"
+                className="inline-flex items-center gap-2 rounded-full bg-white text-navy-900 font-bold px-7 py-3.5 shadow-xl shadow-black/20 hover:scale-105 transition-transform"
+              >
+                <Phone className="h-4 w-4" /> {business.phoneDisplay}
+              </a>
+              <a
+                href={business.salesPhoneHref}
+                data-testid="hero-cta-sales-call"
+                className="mt-1.5 text-xs font-semibold text-slate-300 hover:text-white"
+              >
+                {business.salesPhoneLabel}: {business.salesPhoneDisplay}
+              </a>
+            </div>
             <Link
               to="/contact-pvei-home-services"
               data-testid="hero-cta-quote"
@@ -231,6 +240,12 @@ const Home = () => {
             </p>
             <a href={business.phoneHref} className="mt-8 inline-flex items-center gap-2 text-xl font-display font-extrabold text-sky-300">
               <Phone className="h-5 w-5" /> Call Us Today! {business.phoneDisplay}
+            </a>
+            <a
+              href={business.salesPhoneHref}
+              className="mt-1.5 flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-slate-200"
+            >
+              {business.salesPhoneLabel}: {business.salesPhoneDisplay}
             </a>
           </div>
         </div>

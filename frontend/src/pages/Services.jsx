@@ -172,6 +172,12 @@ const Services = () => {
             <a href={business.phoneHref} className="mt-8 inline-flex items-center gap-2 text-xl font-display font-extrabold text-sky-300">
               <Phone className="h-5 w-5" /> Call Us Today! {business.phoneDisplay}
             </a>
+            <a
+              href={business.salesPhoneHref}
+              className="mt-1.5 flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-slate-200"
+            >
+              {business.salesPhoneLabel}: {business.salesPhoneDisplay}
+            </a>
           </div>
           <div className="order-1 lg:order-2">
             <ContactForm />

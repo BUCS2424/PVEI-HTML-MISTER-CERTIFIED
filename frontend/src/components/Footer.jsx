@@ -49,6 +49,11 @@ const Footer = () => {
               </a>
             </li>
             <li>
+              <a href={business.salesPhoneHref} data-testid="footer-sales-phone-link" className="flex items-center gap-2 pl-6 text-xs text-slate-400 hover:text-sky-300 transition-colors">
+                {business.salesPhoneLabel}: {business.salesPhoneDisplay}
+              </a>
+            </li>
+            <li>
               <a href={business.emailHref} data-testid="footer-email-link" className="flex items-center gap-2 hover:text-sky-300 transition-colors">
                 <Mail className="h-4 w-4 text-sky-400" /> {business.email}
               </a>
