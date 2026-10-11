@@ -6,6 +6,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
+import JobGallery from "@/pages/JobGallery";
 import Residential from "@/pages/Residential";
 import Commercial from "@/pages/Commercial";
 import Industrial from "@/pages/Industrial";
@@ -24,6 +25,7 @@ function App() {
             <Route path="/general-contractor-services" element={<About />} />
             <Route path="/construction-services" element={<Services />} />
             <Route path="/handyman-services-in-pasco" element={<Navigate to="/construction-services" replace />} />
+            <Route path="/job-gallery" element={<JobGallery />} />
             <Route path="/residential-contracting-services" element={<Residential />} />
             <Route path="/commercial-contracting-services" element={<Commercial />} />
             <Route path="/industrial-infrastructure-contracting" element={<Industrial />} />

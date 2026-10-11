@@ -25,6 +25,7 @@ export const nav = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/general-contractor-services" },
   { label: "Our Services", path: "/construction-services" },
+  { label: "Job Gallery", path: "/job-gallery" },
   {
     label: "Markets We Serve",
     children: [
@@ -370,3 +371,12 @@ export const trustPoints = [
   { icon: "ShieldCheck", label: "Fully Insured & Vetted" },
   { icon: "MapPin", label: business.serviceArea },
 ];
+
+// Job Gallery — real jobsite photos, shown in a staggered brick layout.
+const JOB_PHOTO_IDS = [
+  38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+];
+export const jobGallery = JOB_PHOTO_IDS.map((n, idx) => ({
+  src: `/assets/images/job-gallery/IMG_${String(n).padStart(4, "0")}.jpg`,
+  alt: `${business.name} jobsite photo ${idx + 1}`,
+}));
