@@ -29,8 +29,8 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Florida General Contracting & Handyman Services"
-        description="Polar Vortex Home Services provides trusted home repair, remodeling and handyman services across Tampa Bay & Pasco County, Florida. Licensed, insured, 25+ years experience."
+        title="Residential, Commercial & Industrial Construction — Florida"
+        description="Polar Vortex Home Services delivers residential, commercial, and industrial & infrastructure construction across Pinellas County & the Greater Tampa Bay Area, Florida. Licensed, insured, 40+ years in the construction industry."
         path="/"
         jsonLd={jsonLd}
       />
@@ -39,7 +39,7 @@ const Home = () => {
       <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-neutral-900">
         <img
           src="/assets/images/Pvei-contracting-services.jpg"
-          alt="Pasco County Florida home repair and general contracting services"
+          alt="Pinellas County Florida home repair and general contracting services"
           loading="eager"
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover opacity-70"
@@ -54,8 +54,10 @@ const Home = () => {
             General Contracting <span className="text-gradient-ice">Services</span>
           </h1>
           <p className="mt-6 max-w-xl text-slate-200 text-base sm:text-lg leading-relaxed">
-            Our customers know we care about their homes. That&rsquo;s why we are proud to be called{" "}
-            <span className="font-semibold text-white">&ldquo;{business.tagline}&rdquo;</span>. Give us a call today.
+            From homes to commercial properties to public infrastructure, our customers know we get the job done
+            right. That&rsquo;s why we are proud to be called{" "}
+            <span className="font-semibold text-white">&ldquo;{business.tagline}&rdquo;</span> &mdash; trusted across
+            the Tampa Bay Area for {business.yearsExperience} years. Give us a call today.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -96,7 +98,7 @@ const Home = () => {
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-sky-100 to-sky-50 -z-10 hidden sm:block" />
             <img
               src="/assets/images/hero-home.jpg"
-              alt="Home repair project in Pasco County Florida"
+              alt="Home repair project in the Tampa Bay Area, Florida"
               loading="lazy"
               className="rounded-3xl shadow-2xl shadow-navy-900/20 w-full object-contain aspect-[1379/1246]"
             />
@@ -114,15 +116,16 @@ const Home = () => {
               &ldquo;{business.tagline}&rdquo;.
             </p>
             <h3 className="mt-8 font-display text-xl font-bold text-navy-900">
-              Residential &amp; Commercial Contracting Services
+              Residential, Commercial &amp; Industrial Contracting Services
             </h3>
             <p className="mt-4 text-slate-600 leading-relaxed">
-              We are fully insured and vetted to give you peace of mind. We&rsquo;ll clean up after ourselves and
-              treat you and your property with respect. At {business.name}, we strive to do every job right the
-              first time and provide the very best customer experience.
+              From homeowners to commercial property managers to DOTs and municipalities, we bring the same
+              licensed, insured craftsmanship to every project &mdash; residential remodels, commercial build-outs,
+              and industrial &amp; infrastructure work alike. At {business.name}, we strive to do every job right
+              the first time and provide the very best customer experience.
             </p>
             <ul className="mt-6 space-y-2">
-              {["Licensed & fully insured", "25+ years serving Tampa Bay", "Respectful, tidy craftsmanship"].map((li) => (
+              {["Licensed & fully insured", `${business.yearsExperience} years in the construction industry`, "Respectful, tidy craftsmanship"].map((li) => (
                 <li key={li} className="flex items-center gap-2 text-sm font-medium text-navy-800">
                   <CheckCircle2 className="h-4 w-4 text-sky-500" /> {li}
                 </li>
@@ -174,12 +177,21 @@ const Home = () => {
       <section className="py-20 sm:py-28 bg-frost">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto">
+            <p className="text-sky-600 font-bold tracking-[0.2em] uppercase text-sm mb-3">Residential</p>
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-navy-900">
-              Our Pasco Home Repair &amp; Contractor Services
+              Our Tampa Bay Home Repair &amp; Contractor Services
             </h2>
             <p className="mt-4 text-slate-600">
               If you&rsquo;re looking to upgrade your home, or rental property, we can renew any part of your home.
-              No job is too big or small for us.
+              No job is too big or small for us. For commercial and industrial capabilities, see{" "}
+              <Link to="/commercial-contracting-services" className="font-semibold text-sky-600 hover:underline">
+                Commercial
+              </Link>{" "}
+              and{" "}
+              <Link to="/industrial-infrastructure-contracting" className="font-semibold text-sky-600 hover:underline">
+                Industrial &amp; Infrastructure
+              </Link>{" "}
+              above.
             </p>
           </div>
 

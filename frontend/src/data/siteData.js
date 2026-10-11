@@ -13,9 +13,9 @@ export const business = {
   email: "info@pvei.org",
   emailHref: "mailto:info@pvei.org?subject=Website%20Contact",
   license: "CGC1517808",
-  serviceArea: "Tampa Bay & Pasco County, Florida",
+  serviceArea: "Pinellas County & the Greater Tampa Bay Area, Florida",
   hours: "Mon \u2013 Sat: 7:00 AM \u2013 6:00 PM",
-  yearsExperience: "25+",
+  yearsExperience: "40+",
 };
 
 export const nav = [
@@ -45,10 +45,10 @@ export const markets = [
     heroImage: "/assets/images/Pvei-contracting-services.jpg",
     seoTitle: "Residential Contracting — Design-Build, Remodeling & Additions",
     seoDescription:
-      "Polar Vortex delivers residential design-build, full and partial remodeling, additions, and new construction across Tampa Bay & Pasco County, Florida.",
+      "Polar Vortex delivers residential design-build, full and partial remodeling, additions, and new construction across Pinellas County & the Greater Tampa Bay Area, Florida.",
     heroTitle: "Residential Design-Build & Remodeling",
     heroLead:
-      "From a single room refresh to a ground-up new build, we deliver design-build residential contracting across Tampa Bay & Pasco County — licensed, insured, and built to last.",
+      "From a single room refresh to a ground-up new build, we deliver design-build residential contracting across Pinellas County & the Greater Tampa Bay Area — licensed, insured, and built to last.",
     workOffered: [
       "Design-Build",
       "Full or Partial Remodeling",
@@ -67,11 +67,11 @@ export const markets = [
       },
       {
         heading: "Built to Withstand Florida Weather",
-        body: "Florida homes take a beating from humidity, storms, and sun — that's why waterproofing, quality exterior finishes, and durable flooring are core to how we build. We handle everything from epoxy garage and patio flooring to full exterior renovations, protecting your investment long after the crew leaves. Every project is backed by our license (CGC1517808) and 25+ years of hands-on experience in the Tampa Bay area.",
+        body: "Florida homes take a beating from humidity, storms, and sun — that's why waterproofing, quality exterior finishes, and durable flooring are core to how we build. We handle everything from epoxy garage and patio flooring to full exterior renovations, protecting your investment long after the crew leaves. Every project is backed by our license (CGC1517808) and 40+ years of hands-on experience in the construction industry.",
       },
     ],
     gallery: [
-      { src: "/assets/images/hero-home.jpg", alt: "Residential home exterior renovation in Pasco County, Florida" },
+      { src: "/assets/images/hero-home.jpg", alt: "Residential home exterior renovation in the Tampa Bay Area, Florida" },
       { src: "/assets/images/about-handyman.jpg", alt: "Residential remodeling and repair work by Polar Vortex" },
     ],
   },
@@ -87,7 +87,7 @@ export const markets = [
       "Polar Vortex self-performs commercial framing, drywall, insulation, finishes, and safety consulting for build-outs and renovations across Florida.",
     heroTitle: "Commercial Construction Services",
     heroLead:
-      "We support commercial build-outs, renovations, and tenant improvements across Tampa Bay & Pasco County — from framing and drywall to finishes that meet code and deadline.",
+      "We support commercial build-outs, renovations, and tenant improvements across Pinellas County & the Greater Tampa Bay Area — from framing and drywall to finishes that meet code and deadline.",
     workOffered: [
       "Rough Carpentry",
       "Cold-Form Metal Framing",
@@ -168,7 +168,7 @@ export const markets = [
   },
 ];
 
-// Home page — "Our Pasco Home Repair & Contractor Services" numbered list
+// Home page — "Our Tampa Bay Home Repair & Contractor Services" numbered list
 export const numberedServices = [
   {
     number: "01",

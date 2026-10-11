@@ -15,7 +15,7 @@ const Contact = () => {
     <>
       <SEO
         title="Contact Us"
-        description="Contact Polar Vortex Home Services for a free, obligation-free quote on your home repair or remodeling project in Tampa Bay & Pasco County, Florida."
+        description="Contact Polar Vortex Home Services for a free, obligation-free quote on your home repair or remodeling project in Pinellas County & the Greater Tampa Bay Area, Florida."
         path="/contact-pvei-home-services"
         jsonLd={jsonLd}
       />
@@ -36,7 +36,7 @@ const Contact = () => {
 
           <div className="space-y-6">
             <div className="rounded-3xl bg-navy-950 text-white p-8 shadow-2xl shadow-navy-900/30">
-              <h2 className="font-display text-2xl font-extrabold mb-2">Pasco Florida Construction Services</h2>
+              <h2 className="font-display text-2xl font-extrabold mb-2">Tampa Bay Florida Construction Services</h2>
               <p className="text-slate-300 text-sm leading-relaxed mb-6">
                 Part of our amazing service begins right now! Get in touch for an obligation-free quote today.
               </p>

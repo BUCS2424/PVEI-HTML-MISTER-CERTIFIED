@@ -20,7 +20,7 @@ const Footer = () => {
             exceeds expectations. We service most of Florida — we do all jobs big and small. Get in touch for an
             obligation-free quote today.
           </p>
-          <p className="mt-4 text-sm font-semibold text-slate-200">Pasco &amp; Tampa Bay Florida Construction Services</p>
+          <p className="mt-4 text-sm font-semibold text-slate-200">Pinellas County &amp; Tampa Bay Florida Construction Services</p>
           <div className="mt-3 flex items-center gap-2 text-xs text-sky-300">
             <ShieldCheck className="h-4 w-4" />
             License # {business.license}

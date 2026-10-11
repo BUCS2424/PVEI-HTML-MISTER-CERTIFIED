@@ -24,14 +24,14 @@ const About = () => {
     name: "About Polar Vortex Home Services",
     url: `${SITE_URL}/general-contractor-services`,
     description:
-      "Polar Vortex can build, install, repair, or improve just about anything around your home \u2014 licensed general contractor and handyman services in Pasco County, Florida.",
+      "Polar Vortex can build, install, repair, or improve just about anything around your home \u2014 licensed general contractor and handyman services based in Pinellas County, serving the Greater Tampa Bay Area, Florida.",
   };
 
   return (
     <>
       <SEO
-        title="About Us — Licensed General Contractor in Pasco County"
-        description="Learn about Polar Vortex Home Services, Pasco County's trusted licensed general contractor and handyman with 25+ years of experience across the Tampa Bay Area."
+        title="About Us — Licensed General Contractor in Pinellas County"
+        description="Learn about Polar Vortex Home Services, Pinellas County's trusted licensed general contractor and handyman with 40+ years of experience in the construction industry, serving the Greater Tampa Bay Area."
         path="/general-contractor-services"
         jsonLd={jsonLd}
       />
@@ -99,7 +99,7 @@ const About = () => {
           <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto">
             {business.name} takes care of what needs to be done so that each item on your &ldquo;to-do&rdquo; list is
             checked. After we complete your general repairs, we can move on to tile repair, installing countertops,
-            sheetrock &amp; drywall repairs, and more &mdash; your Handyman in Pasco can take care of it all.
+            sheetrock &amp; drywall repairs, and more &mdash; your trusted Tampa Bay Handyman can take care of it all.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a href={business.phoneHref} className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-sky-500 to-sky-700 text-white font-bold px-7 py-3.5 shadow-lg shadow-sky-900/20 hover:scale-105 transition-transform">
