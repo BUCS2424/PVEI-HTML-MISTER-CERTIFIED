@@ -3,6 +3,13 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
 import { business, jobGallery, SITE_URL } from "@/data/siteData";
 
+// Most source photos share nearly the same portrait dimensions, so natural
+// image height alone doesn't produce a brick pattern. Cycle through a small,
+// deliberately varied set of crop ratios instead (a 5-length cycle avoids
+// lining up with the 2/3/4-column breakpoints below, so no column repeats
+// the same ratio back-to-back).
+const TILE_ASPECTS = ["aspect-[3/4]", "aspect-square", "aspect-[4/5]", "aspect-[5/4]", "aspect-[4/3]"];
+
 const JobGallery = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -71,7 +78,7 @@ const JobGallery = () => {
                   src={photo.src}
                   alt={photo.alt}
                   loading="lazy"
-                  className="w-full h-auto object-cover"
+                  className={`w-full object-cover ${TILE_ASPECTS[idx % TILE_ASPECTS.length]}`}
                 />
               </button>
             ))}
